@@ -1,0 +1,123 @@
+.navbar_container {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_links_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_img {
+   width: 62.56px;
+   height: 16.02px; 
+   margin-right: 2rem; 
+}
+.nav_img img{
+    width: 100%;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links p,
+.nav_sign_in p,
+.nav_links_sm p, 
+.nav_sign_in_sm p{
+    font-size: 18px;
+    line-height: 24.59px;
+    color: #fff;
+    font-family: var(--font-family);
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0 1rem;
+}
+
+.nav_sign_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_sign_in button,
+.nav_sign_in_sm button {
+    color: #fff;
+    font-family: var(--font-family);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24.59px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF4820;
+}
+
+.navbar_container_sm {
+    position: relative;
+    display: none;
+}
+
+.nav_list_sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 210px;
+    padding: 2rem;
+    background: var(--color-footer);
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    text-align: end;
+}
+
+.nav_links_sm p{
+    margin: 1rem 0;
+}
+.nav_sign_in_sm p{
+    margin-bottom: 1rem ;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav_links {
+        display: none;
+    }
+    .navbar_container_sm {
+        display: block;
+    }
+    .nav_sign_in_sm {
+        display: none;
+    }
+    .nav_sign_in {
+        position: absolute;;
+        right: 8.60rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar_container {
+        padding: 2rem 4rem;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .navbar_container {
+        padding: 2rem;
+    }
+    .nav_sign_in {
+        display: none;
+    }
+    .nav_sign_in_sm {
+        display: block;
+    }
+}
+
